@@ -1,0 +1,99 @@
+.boards1{
+    width: 75%;
+    height: 20%;
+}
+
+.boards2{
+    width: 60%;
+    height: 25%;
+}
+
+.paddling{
+    width: 80%;
+    height: 40%;
+}
+
+.etiquette{
+    width: 60%;
+    height: 50%;
+}
+
+.safety{
+    width: 70%;
+    height: 70%;
+}
+
+.q1{
+    width: 30%;
+    height: 30%;
+}
+
+.container{
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.top{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.right{
+    position: absolute;
+    right: 50;
+    top: 10;
+}
+
+
+div.c-wrapper{
+    width: 60%; /* for example */
+    margin: auto;
+    text-align: center;
+ 
+}
+
+.carousel-item{
+    height: 30rem;
+}
+
+.descr{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.carousel-caption{
+    background-color: rgb(0,0,0,.7);
+    padding: 1rem;
+    width: 50%;
+    margin-left: 10%;
+}
+
+
+.carousel-item img {
+    object-fit: contain;
+    width: 800px;
+    height: 500px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    /* Use to adjust size of icons */
+    background-color: black;
+}
+
+figure img {
+    width: 300px;
+    height: 300px;
+}
+
+.container-paddling{
+    width: 80%;
+    margin: auto;
+}
+
+figure figcaption{
+    color: white;
+}
+
+figure:hover figcaption{
+    color: black;
+}
