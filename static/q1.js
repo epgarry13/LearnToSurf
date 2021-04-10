@@ -6,6 +6,7 @@ rightAnswer = document.querySelector('.kook');
 rightAnswer.addEventListener("click", function() {
     let score = parseInt(localStorage.getItem("score"));
     score += 1;
+    // alert('Correct! This surfer did not protect his head.')
     localStorage.setItem("score", score.toString());
 });
 

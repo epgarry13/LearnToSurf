@@ -64,8 +64,8 @@ div.c-wrapper{
 .carousel-caption{
     background-color: rgb(0,0,0,.7);
     padding: 1rem;
-    width: 50%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 5%;
 }
 
 
@@ -97,3 +97,39 @@ figure figcaption{
 figure:hover figcaption{
     color: black;
 }
+
+.row{
+    color: white;
+    margin-top: 4rem;
+}
+
+.row:hover{
+    color: rgb(4, 55, 87);
+}
+
+.safety-col img{
+    margin-left: 20%;
+    height: 25vw;
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.safety-caption{
+    margin-top: 15%;
+    width: 50%;
+}
+
+.bg-alt{
+    color: rgb(225, 242, 252);
+    background-color: rgb(225, 242, 252);
+    padding: 2rem;
+}
+
+.bg-alt:hover{
+    color: rgb(4, 55, 87);
+}
+
+.kook-def{
+    width: 50%;
+}
+

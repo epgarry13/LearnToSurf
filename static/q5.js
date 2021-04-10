@@ -1,6 +1,6 @@
 getScore();
 
-rightAnswer = document.querySelector('.right');
+rightAnswer = document.querySelector('.right-answer');
 wrongAnswer = document.querySelectorAll('.wrong');
 
 rightAnswer.addEventListener("click", function() {

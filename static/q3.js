@@ -1,6 +1,6 @@
 getScore();
 
-rightAnswer = document.querySelector('.not-kook');
+rightAnswer = document.querySelector('.kook');
 
 rightAnswer.addEventListener("click", function() {
     let score = parseInt(localStorage.getItem("score"));
