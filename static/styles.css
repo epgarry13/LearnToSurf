@@ -1,161 +1,215 @@
-.boards1{
-    width: 75%;
-    height: 20%;
+.boards1 {
+  width: 75%;
+  height: 20%;
 }
 
-.boards2{
-    width: 60%;
-    height: 25%;
+.boards2 {
+  width: 60%;
+  height: 25%;
 }
 
-.paddling{
-    width: 80%;
-    height: 40%;
+.paddling {
+  width: 80%;
+  height: 40%;
 }
 
-.etiquette{
-    width: 60%;
-    height: 50%;
+.etiquette {
+  width: 60%;
+  height: 50%;
 }
 
-.safety{
-    width: 70%;
-    height: 70%;
+.safety {
+  width: 70%;
+  height: 70%;
 }
 
-.q1{
-    width: 30%;
-    height: 30%;
+.q1 {
+  width: 30%;
+  height: 30%;
 }
 
-.q5{
-    width: 100%;
-    height: 30%;
+.q5 {
+  width: 100%;
+  height: 30%;
 }
 
-.container{
-    max-width: 50%;
-    max-height: 50%;
+.container {
+  max-width: 50%;
+  max-height: 50%;
 }
 
-.top{
-    position: relative;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.top {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.right{
-    position: absolute;
-    right: 50;
-    top: 10;
+.right {
+  position: absolute;
+  right: 50;
+  top: 10;
 }
 
-
-div.c-wrapper{
-    width: 60%; /* for example */
-    margin: auto;
-    text-align: center;
- 
+div.c-wrapper {
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  text-align: center;
 }
 
-.carousel-item{
+/* .carousel-item{
     height: 30rem;
+} */
+
+.descr {
+  width: 50%;
+  margin-bottom: 2rem;
 }
 
-.descr{
-    width: 50%;
-    margin-bottom: 2rem;
+.carousel-caption {
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 1rem;
 }
-.carousel-caption{
-    background-color: rgb(0,0,0,.7);
-    padding: 1rem;
-    width: 60%;
-    margin-left: 5%;
-}
-
 
 .carousel-item img {
-    object-fit: contain;
-    width: 800px;
-    height: 500px;
+  /* object-fit: contain; */
+  height: 40vw;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    /* Use to adjust size of icons */
-    background-color: black;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  /* Use to adjust size of icons */
+  background-color: black;
+  padding: 1rem;
 }
 
 figure img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
-.container-paddling{
-    width: 80%;
-    margin: auto;
+.container-paddling {
+  width: 80%;
+  margin: auto;
 }
 
-figure figcaption{
-    color: white;
+.row {
+  color: white;
+  margin-top: 4rem;
 }
 
-figure:hover figcaption{
-    color: black;
+.row:hover {
+  color: rgb(4, 55, 87);
 }
 
-.row{
-    color: white;
-    margin-top: 4rem;
+.safety-col img {
+  margin-left: 20%;
+  height: 25vw;
+  width: 35vw;
+  border-radius: 20px;
 }
 
-.row:hover{
-    color: rgb(4, 55, 87);
+.safety-caption {
+  margin-top: 15%;
+  width: 50%;
 }
 
-.safety-col img{
-    margin-left: 20%;
-    height: 25vw;
-    width: 35vw;
-    border-radius: 20px;
+.bg-alt {
+  color: rgb(225, 242, 252);
+  background-color: rgb(225, 242, 252);
+  padding: 2rem;
 }
 
-.safety-caption{
-    margin-top: 15%;
-    width: 50%;
+.bg-alt:hover {
+  color: rgb(4, 55, 87);
 }
 
-.bg-alt{
-    color: rgb(225, 242, 252);
-    background-color: rgb(225, 242, 252);
-    padding: 2rem;
+.kook-def {
+  width: 50%;
 }
 
-.bg-alt:hover{
-    color: rgb(4, 55, 87);
+.modal-home {
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  width: 5rem;
 }
 
-.kook-def{
-    width: 50%;
+.modal-home:hover {
+  text-decoration: none;
+  color: white;
+  background-color: lightskyblue;
 }
 
-.modal-home{
-    color: white;
-    background-color: blue;
-    text-decoration: none;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1.2rem;
-    padding-right: 1rem;
-    border-radius: 5px;
-    width: 5rem;
+.scorelines {
+  line-height: 1.75;
 }
 
-.modal-home:hover{
-    text-decoration: none;
-    color:white;
-    background-color: lightskyblue;
+.card1 {
+  /* position: absolute; */
+  margin-left: 31px;
+  width: 333.5px;
+  height: 250px;
+  float: left;
+  perspective: 500px;
+  border: none;
 }
 
-.scorelines{
-    line-height: 1.75;
+.card2 {
+    /* position: absolute; */
+    margin-left: 9%;
+    width: 333.5px;
+    height: 250px;
+    float: left;
+    perspective: 500px;
+    border: none;
+  }
+
+  .card3 {
+    /* position: absolute; */
+    margin-left: 9%;
+    width: 333.5px;
+    height: 250px;
+    float: left;
+    perspective: 500px;
+    border: none;
+  }
+
+.content {
+  /* position: absolute; */
+  margin: -40px 0 0 1px;
+  width: 90%;
+  height: 90%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+figure:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  padding: 1rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #7bd6b8;
+  text-align: center;
+  backface-visibility: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.back {
+  background: #b8dfd2;
+  color: darkblue;
+  transform: rotateY(180deg);
 }

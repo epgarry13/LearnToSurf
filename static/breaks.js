@@ -1,5 +1,6 @@
-// GET TO BOARDS PAGE
-boardssbutton = document.querySelector(".boards-arrow");
-boardssbutton.onclick = function () {
-    window.location.href = "../../LearnToSurf/learn/boards.html";
+
+
+etiquettebutton = document.querySelector(".etiquette-arrow");
+etiquettebutton.onclick = function () {
+    window.location.href = "../../LearnToSurf/learn/etiquette.html";
 };

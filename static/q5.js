@@ -66,7 +66,7 @@ function customModal(score, parentDiv){
     var q4 = localStorage.getItem("q4");
     
     if (q1 == 'unanswered'){
-        var str1 = '<div>Q1: Incorrect. The right answer was "Kook".</div>'
+        var str1 = '<div>Q1: Incorrect. The right answer was "Kook" - the surfer is not protecting his head.</div>'
     } else {
         var str1 = '<div>Q1: Correct!</div>'
     }
@@ -78,13 +78,13 @@ function customModal(score, parentDiv){
     }
 
     if (q3 == 'unanswered'){
-        var str3 = '<div>Q3: Incorrect. The right answer was "Kook".</div>'
+        var str3 = '<div>Q3: Incorrect. The right answer was "Kook". The surfer is too far low on his board.</div>'
     } else {
         var str3 = '<div>Q3: Correct!</div>'
     }
 
     if (q4 == 'unanswered'){
-        var str4 = '<div>Q4: Incorrect. The right answer was "Kook".</div>'
+        var str4 = '<div>Q4: Incorrect. The right answer was "Kook". The surfer on the right is cutting off the other surfer.</div>'
     } else {
         var str4 = '<div>Q4: Correct!</div>'
     }
@@ -99,7 +99,7 @@ function customModal(score, parentDiv){
     answerDiv.innerHTML = `
     <em>${score}</em>
     <div class='mt-3'>
-        <h3>Score Breakdown: </h3>
+        <h5>Score Breakdown: </h5>
     </div>
     <div class='mt-3 scorelines'>
         ${str1}
