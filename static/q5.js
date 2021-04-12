@@ -72,7 +72,7 @@ function customModal(score, parentDiv){
     }
 
     if (q2 == 'unanswered'){
-        var str2 = '<div>Q2: Incorrect. The right answer was "Reef"</div>'
+        var str2 = '<div>Q2: Incorrect. The right answer was "Reef".</div>'
     } else {
         var str2 = '<div>Q2: Correct!</div>'
     }
