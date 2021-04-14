@@ -32,7 +32,7 @@ wrongAnswer.addEventListener("click", function() {
 function getScore(){
     rightAnswer = document.querySelector('.kook');
     wrongAnswer = document.querySelector('.wrong-answer');
-    reset = document.querySelector('.modal-ID');
+    
 
     if (localStorage.getItem("q1") != 'answered'){
         document.querySelector(".score").textContent = "0/5";
@@ -47,6 +47,7 @@ function getScore(){
     }
 }
 
+reset = document.querySelector('.modal-ID');
 
 reset.addEventListener("click", function() {
     localStorage.setItem("q1", 'unanswered');

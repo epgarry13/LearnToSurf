@@ -66,7 +66,7 @@ function customModal(score, parentDiv){
     var q4 = localStorage.getItem("status4");
     
     if (q1 == 'incorrect'){
-        var str1 = '<div><span class="red">Q1: Incorrect. </span>The right answer was no - the surfer is not protecting his head.</div>'
+        var str1 = '<div><span class="red">Q1: Incorrect. </span>The surfer is not protecting his head.</div>'
     } else {
         var str1 = '<div><span class="green">Q1: Correct!</span></div>'
     }
@@ -78,13 +78,13 @@ function customModal(score, parentDiv){
     }
 
     if (q3 == 'incorrect'){
-        var str3 = '<div><span class="red">Q3: Incorrect. </span>The right answer was no - the surfer is too far low on his board.</div>'
+        var str3 = '<div><span class="red">Q3: Incorrect. </span>The surfer is too far low on his board.</div>'
     } else {
         var str3 = '<div><span class="green">Q3: Correct!</span></div>'
     }
 
     if (q4 == 'incorrect'){
-        var str4 = '<div><span class="red">Q4: Incorrect. </span>The right answer was no - the surfer on the right is cutting off the other surfer.</div>'
+        var str4 = '<div><span class="red">Q4: Incorrect. </span>The surfer on the right is cutting off the other surfer.</div>'
     } else {
         var str4 = '<div><span class="green">Q4: Correct!</span></div>'
     }
@@ -109,6 +109,16 @@ function customModal(score, parentDiv){
         ${str5}
     </div>
     `;
+
+
+    localStorage.setItem("q1", 'unanswered');
+    localStorage.setItem("q2", 'unanswered');
+    localStorage.setItem("q3", 'unanswered');
+    localStorage.setItem("q4", 'unanswered');
+    localStorage.setItem("status1", 'incorrect');
+    localStorage.setItem("status2", 'incorrect');
+    localStorage.setItem("status3", 'incorrect');
+    localStorage.setItem("status4", 'incorrect');
 
     
 }
