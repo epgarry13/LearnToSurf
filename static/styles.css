@@ -268,25 +268,35 @@ figure:hover .content {
   height: 250px;
 }
 
-.card2, .card3 {
-  margin-left: 6vw;
-  height: 250px;
-  perspective: 500px;
-  border: none;
-  right: 0;
+
+@media (max-width: 1250px) {
+
+  .make-rows{
+    display: block;
+  }
+
+
+  .card1 {
+    height: 50vh;
+    width: 20rem;
+  }
+
+
+
+  figure img {
+    width: 20rem;
+    height: 20rem;
+
+  }
+
+  .front,
+  .back {
+    width: 20rem;
+    height: 15rem;
+  } 
 }
 
 
-
-.etiquette {
-  width: 60%;
-  height: 50%;
-}
-
-.safety {
-  width: 70%;
-  height: 70%;
-}
 
 .q1 {
   width: 30%;
