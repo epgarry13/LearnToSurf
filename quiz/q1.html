@@ -28,7 +28,7 @@
                     
 
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn-primary-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Home
                 </button>
                 
@@ -44,21 +44,17 @@
                         If you proceed, all progress will be lost.
                         </div>
                         <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
-                        <a class="modal-home" href="../../LearnToSurf/index.html">Home</a>
+                        <button type="button" class="btn-modal-1 text-center" data-bs-dismiss="modal">Go Back</button>
+                        <a class="btn-modal-2 text-center" href="../../LearnToSurf/index.html">Home</a>
                         </div>
                     </div>
                     </div>
                 </div>
                 
-
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                
-                <div class="navbar-nav p-3 score">                
+                <div class="navbar-nav score">                
                 
                 </div>
 
-              </div>
             </div>
           </nav>
 
@@ -66,24 +62,27 @@
             <h1>Question 1</h1>                                      
         </div>
         <div class="lead text-center text-muted mt-3">
-            <h6>Is this surfer a kook?</h6>                                      
+            <h6>Is this surfer being safe?</h6>                                      
         </div>
 
 
         <main class="flex-fill">
             
-            <div class="mt-3 d-flex justify-content-center">
+            <div class="mt-3 d-flex justify-content-center img-cont-q5">
                 <img class='q1' src='https://media.giphy.com/media/XKSafUb16EtbDWQ0xh/giphy.gif' alt='q1'>            
             </div>
-            <div class="d-flex justify-content-center gap-5 mt-3">
-                <a href="../../LearnToSurf/quiz/q2.html" class="kook btn btn-primary my-2">That's a kook</a>
-                <a href="../../LearnToSurf/quiz/q2.html" class="wrong-answer btn btn-secondary my-2">Not a kook</a>
+
+            <div class="answer-container">
+                <div class="kook-cont raise">
+                    <a href="../../LearnToSurf/quiz/q2.html" class="kook"><span class="thumbs-up-cont"><i class="fas fa-thumbs-up"></i></span></a>               
+                </div>
+                <div class="not-kook-cont raise">
+                    <a href="../../LearnToSurf/quiz/q2.html" class="wrong-answer"><span class="thumbs-down-cont"><i class="fas fa-thumbs-down"></i></span></a>
+                </div>
             </div>
 
-            
-
         </main>
-
+        
         
 
         <footer class="bg-light border-top footer mt-5 py-5">

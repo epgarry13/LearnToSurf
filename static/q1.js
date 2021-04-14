@@ -13,12 +13,14 @@ reset.addEventListener("click", function() {
 
 rightAnswer.addEventListener("click", function() {
 
+    alert('here');
     if (localStorage.getItem("q1") != 'answered'){
         let score = parseInt(localStorage.getItem("score"));
         score += 1;
         localStorage.setItem("score", score.toString());
         localStorage.setItem("q1", 'answered');
     }
+
 });
 
 function getScore(){

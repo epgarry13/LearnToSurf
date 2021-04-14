@@ -11,7 +11,10 @@
     <title>Learn To Surf!</title>
 
     <link rel="stylesheet" href="../../LearnToSurf/static/styles.css" />
-    <link href="http://fonts.cdnfonts.com/css/airbnb-cereal-app" rel="stylesheet">
+    <link
+      href="http://fonts.cdnfonts.com/css/airbnb-cereal-app"
+      rel="stylesheet"
+    />
     <script
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
       data-auto-a11y="true"
@@ -32,10 +35,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Button trigger modal -->
         <button
           type="button"
-          class="btn btn-primary"
+          class="btn-primary-2"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
@@ -67,26 +71,22 @@
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="btn-modal-1 text-center"
                   data-bs-dismiss="modal"
                 >
                   Go Back
                 </button>
-                <a class="modal-home" href="../../LearnToSurf/index.html"
+                <a
+                  class="btn-modal-2 text-center"
+                  href="../../LearnToSurf/index.html"
                   >Home</a
                 >
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNavAltMarkup"
-        >
-          <div class="justify-content-center">
-            <div class="score navbar-nav p-3"></div>
-          </div>
-        </div>
+
+        <div class="navbar-nav score"></div>
       </div>
     </nav>
 
@@ -95,7 +95,7 @@
     </div>
 
     <div class="lead text-center text-muted mt-3">
-      <h6>Is this surfer a kook?</h6>                                      
+      <h6>Is this surfer paddling correctly?</h6>
     </div>
 
     <main class="flex-fill">
@@ -105,15 +105,21 @@
           src="https://media.giphy.com/media/l49JDnH74g8J4xcKk/giphy.gif"
           alt="q3"
         />
-        <div class="mt-3">
-          <a href="../../LearnToSurf/quiz/q4.html" class="kook btn btn-primary"
-            >That's a kook</a
-          >
+        <div class="answer-container ans-cont2">
+          <div class="kook-cont raise">
+            <a
+              href="../../LearnToSurf/quiz/q4.html"
+              class="kook"
+              ><span class="thumbs-up-cont"><i class="fas fa-thumbs-up"></i
+            ></span></a>
+          </div>
+          <div class='not-kook-cont raise not-kook-cont-2'>
           <a
             href="../../LearnToSurf/quiz/q4.html"
-            class="not-kook btn btn-secondary"
-            >Not a kook</a
-          >
+            class="not-kook wrong-answer"
+            ><span class="thumbs-down-cont"><i class="fas fa-thumbs-up"></i></span></i
+          ></a>
+        </div>
         </div>
       </div>
     </main>
