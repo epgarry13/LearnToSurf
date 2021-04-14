@@ -121,4 +121,8 @@ reset.addEventListener("click", function() {
     localStorage.setItem("q2", 'unanswered');
     localStorage.setItem("q3", 'unanswered');
     localStorage.setItem("q4", 'unanswered');
+    localStorage.setItem("status1", 'incorrect');
+    localStorage.setItem("status2", 'incorrect');
+    localStorage.setItem("status3", 'incorrect');
+    localStorage.setItem("status4", 'incorrect');
 });
