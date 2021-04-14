@@ -60,30 +60,30 @@ function getScore(){
 
 function customModal(score, parentDiv){
 
-    var q1 = localStorage.getItem("q1");
-    var q2 = localStorage.getItem("q2");
-    var q3 = localStorage.getItem("q3");
-    var q4 = localStorage.getItem("q4");
+    var q1 = localStorage.getItem("status");
+    var q2 = localStorage.getItem("status2");
+    var q3 = localStorage.getItem("status3");
+    var q4 = localStorage.getItem("status4");
     
-    if (q1 == 'unanswered'){
+    if (q1 == 'incorrect'){
         var str1 = '<div><span class="red">Q1: Incorrect. </span>The right answer was no - the surfer is not protecting his head.</div>'
     } else {
         var str1 = '<div><span class="green">Q1: Correct!</span></div>'
     }
 
-    if (q2 == 'unanswered'){
+    if (q2 == 'incorrect'){
         var str2 = '<div><span class="red">Q2: Incorrect. </span>The right answer was <em>Reef</em>.</div>'
     } else {
         var str2 = '<div><span class="green">Q2: Correct!</span></div>'
     }
 
-    if (q3 == 'unanswered'){
+    if (q3 == 'incorrect'){
         var str3 = '<div><span class="red">Q3: Incorrect. </span>The right answer was no - the surfer is too far low on his board.</div>'
     } else {
         var str3 = '<div><span class="green">Q3: Correct!</span></div>'
     }
 
-    if (q4 == 'unanswered'){
+    if (q4 == 'incorrect'){
         var str4 = '<div><span class="red">Q4: Incorrect. </span>The right answer was no - the surfer on the right is cutting off the other surfer.</div>'
     } else {
         var str4 = '<div><span class="green">Q4: Correct!</span></div>'

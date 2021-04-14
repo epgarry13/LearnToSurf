@@ -61,7 +61,6 @@ function getScore(){
     wrongAnswer4 = document.querySelector('.wrong4');
     rightAnswer = document.querySelector('.reef');
 
-
     if (localStorage.getItem("q2") != 'answered'){
         localStorage.setItem("q2", 'unanswered');
     }
