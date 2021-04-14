@@ -1,19 +1,7 @@
 
 getScore();
 
-rightAnswer = document.querySelector('.kook');
-reset = document.querySelector('.modal-home');
-
-reset.addEventListener("click", function() {
-    localStorage.setItem("q1", 'unanswered');
-    localStorage.setItem("q2", 'unanswered');
-    localStorage.setItem("q3", 'unanswered');
-    localStorage.setItem("q4", 'unanswered');
-});
-
 rightAnswer.addEventListener("click", function() {
-
-    alert('here');
     if (localStorage.getItem("q1") != 'answered'){
         let score = parseInt(localStorage.getItem("score"));
         score += 1;
@@ -24,10 +12,22 @@ rightAnswer.addEventListener("click", function() {
 });
 
 function getScore(){
+    rightAnswer = document.querySelector('.kook');
+    reset = document.querySelector('.modal-ID');
 
     document.querySelector(".score").textContent = "0/5";
     localStorage.setItem("score", "0");
     if (localStorage.getItem("q1") != 'answered'){
         localStorage.setItem("q1", 'unanswered');
     }
+
+
 }
+
+
+reset.addEventListener("click", function() {
+    localStorage.setItem("q1", 'unanswered');
+    localStorage.setItem("q2", 'unanswered');
+    localStorage.setItem("q3", 'unanswered');
+    localStorage.setItem("q4", 'unanswered');
+});

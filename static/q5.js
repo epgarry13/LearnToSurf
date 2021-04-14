@@ -17,7 +17,7 @@ rightAnswer.addEventListener("click", function() {
         let score = parseInt(localStorage.getItem("score"));
         score += 1;
         perc = score/5 * 100
-        str = "You scored: " +  perc + "%. Please Try Again";        
+        str = "You scored: " +  perc + "%. Please Try Again.";        
         customModal(str, '.a4-body');
    
     }
@@ -34,21 +34,21 @@ wrongAnswer1.addEventListener("click", function() {
     let answerDiv = document.querySelector('.a1');
     let score = parseInt(localStorage.getItem("score"));
     perc = score/5  * 100
-    str = "You scored: " +  perc + "%. Please Try Again";
+    str = "You scored: " +  perc + "%. Please Try Again.";
     customModal(str, '.a1-body');
 });
 wrongAnswer2.addEventListener("click", function() {
     let answerDiv = document.querySelector('.a2');
     let score = parseInt(localStorage.getItem("score"));
     perc = score/5  * 100
-    str = "You scored: " +  perc + "%. Please Try Again";    
+    str = "You scored: " +  perc + "%. Please Try Again.";    
     customModal(str, '.a2-body');
 });
 wrongAnswer3.addEventListener("click", function() {
     let answerDiv = document.querySelector('.a3');
     let score = parseInt(localStorage.getItem("score"));
     perc = score/5  * 100
-    str = "You scored: " +  perc + "%. Please Try Again";    
+    str = "You scored: " +  perc + "%. Please Try Again.";    
     customModal(str, '.a3-body');
 });
 
@@ -66,33 +66,33 @@ function customModal(score, parentDiv){
     var q4 = localStorage.getItem("q4");
     
     if (q1 == 'unanswered'){
-        var str1 = '<div>Q1: Incorrect. The right answer was "Kook" - the surfer is not protecting his head.</div>'
+        var str1 = '<div><span class="red">Q1: Incorrect. </span>The right answer was no - the surfer is not protecting his head.</div>'
     } else {
-        var str1 = '<div>Q1: Correct!</div>'
+        var str1 = '<div><span class="green">Q1: Correct!</span></div>'
     }
 
     if (q2 == 'unanswered'){
-        var str2 = '<div>Q2: Incorrect. The right answer was "Reef".</div>'
+        var str2 = '<div><span class="red">Q2: Incorrect. </span>The right answer was <em>Reef</em></div>'
     } else {
-        var str2 = '<div>Q2: Correct!</div>'
+        var str2 = '<div><span class="green">Q2: Correct!</span></div>'
     }
 
     if (q3 == 'unanswered'){
-        var str3 = '<div>Q3: Incorrect. The right answer was "Kook". The surfer is too far low on his board.</div>'
+        var str3 = '<div><span class="red">Q3: Incorrect. </span>The right answer was no - the surfer is too far low on his board.</div>'
     } else {
-        var str3 = '<div>Q3: Correct!</div>'
+        var str3 = '<div><span class="green">Q3: Correct!</span></div>'
     }
 
     if (q4 == 'unanswered'){
-        var str4 = '<div>Q4: Incorrect. The right answer was "Kook". The surfer on the right is cutting off the other surfer.</div>'
+        var str4 = '<div><span class="red">Q4: Incorrect. </span>The right answer was no - the surfer on the right is cutting off the other surfer.</div>'
     } else {
-        var str4 = '<div>Q4: Correct!</div>'
+        var str4 = '<div><span class="green">Q4: Correct!</span></div>'
     }
 
     if (parentDiv == '.a4-body'){
-        var str5 = '<div>Q5: Correct!</div>'
+        var str5 = '<div><span class="green">Q5: Correct!</span></div>'
     } else {
-        var str5 = '<div>Q5: Incorrect. The right answer was "Longboard".</div>'
+        var str5 = '<div><span class="red">Q5: Incorrect. </span>The right answer was <em>Longboard</em></div>'
     }
     
     let answerDiv = document.querySelector(parentDiv);
@@ -109,11 +109,12 @@ function customModal(score, parentDiv){
         ${str5}
     </div>
     `;
-      
+
+    
 }
 
 
-reset = document.querySelector('.modal-home');
+reset = document.querySelector('.modal-ID');
 
 reset.addEventListener("click", function() {
     localStorage.setItem("q1", 'unanswered');

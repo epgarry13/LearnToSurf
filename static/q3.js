@@ -2,7 +2,7 @@ getScore();
 
 rightAnswer = document.querySelector('.kook');
 
-reset = document.querySelector('.modal-home');
+reset = document.querySelector('.modal-ID');
 
 reset.addEventListener("click", function() {
     localStorage.setItem("q1", 'unanswered');
