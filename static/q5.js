@@ -72,7 +72,7 @@ function customModal(score, parentDiv){
     }
 
     if (q2 == 'unanswered'){
-        var str2 = '<div><span class="red">Q2: Incorrect. </span>The right answer was <em>Reef</em></div>'
+        var str2 = '<div><span class="red">Q2: Incorrect. </span>The right answer was <em>Reef</em>.</div>'
     } else {
         var str2 = '<div><span class="green">Q2: Correct!</span></div>'
     }
@@ -92,7 +92,7 @@ function customModal(score, parentDiv){
     if (parentDiv == '.a4-body'){
         var str5 = '<div><span class="green">Q5: Correct!</span></div>'
     } else {
-        var str5 = '<div><span class="red">Q5: Incorrect. </span>The right answer was <em>Longboard</em></div>'
+        var str5 = '<div><span class="red">Q5: Incorrect. </span>The right answer was <em>Longboard</em>.</div>'
     }
     
     let answerDiv = document.querySelector(parentDiv);
