@@ -119,6 +119,7 @@ function customModal(score, parentDiv){
     localStorage.setItem("status2", 'incorrect');
     localStorage.setItem("status3", 'incorrect');
     localStorage.setItem("status4", 'incorrect');
+    localStorage.setItem("score", "0");
 
     
 }
@@ -135,4 +136,5 @@ reset.addEventListener("click", function() {
     localStorage.setItem("status2", 'incorrect');
     localStorage.setItem("status3", 'incorrect');
     localStorage.setItem("status4", 'incorrect');
+    localStorage.setItem("score", "0");
 });

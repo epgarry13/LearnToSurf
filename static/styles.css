@@ -196,6 +196,7 @@ div.c-wrapper {
   height: 60vh;
   opacity: 90%;
   filter: brightness(30%);
+  width: 100%;
 }
 
 .carousel-caption{
@@ -206,7 +207,7 @@ div.c-wrapper {
 .carousel-control-prev-icon {
   /* Use to adjust size of icons */
   background-color: black;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 
@@ -426,13 +427,13 @@ figure:hover .content {
   letter-spacing: 1.3;
   text-decoration: none;
   border-radius: 10px;
-  color: #00bcd4;
-  border: 3px solid #00bcd4;
+  color: black;
+  border: 3px solid black;
   font-weight: 600;
 }
 
 .btn-primary-2:hover{
-  background-color: #00bcd4;
+  background-color: black;
   color: white;
   transition: ease-in-out .3s;
   
@@ -445,13 +446,13 @@ figure:hover .content {
   letter-spacing: 1.3;
   text-decoration: none;
   border-radius: 10px;
-  color: #5c64a2;
-  border: 3px solid #5c64a2;
+  color: black;
+  border: 3px solid black;
   font-weight: 600;
 }
 
 .btn-secondary-2:hover{
-  background-color: #5c64a2;
+  background-color: black;
   color: white;
   transition: ease-in-out .3s;
   

@@ -29,16 +29,23 @@ wrongAnswer.addEventListener("click", function() {
     }
 });
 
+
 function getScore(){
     rightAnswer = document.querySelector('.kook');
     wrongAnswer = document.querySelector('.wrong-answer');
-    
+
 
     if (localStorage.getItem("q1") != 'answered'){
-        document.querySelector(".score").textContent = "0/5";
-        localStorage.setItem("score", "0");
-        localStorage.setItem("status", 'incorrect');
-        localStorage.setItem("q1", 'unanswered');
+        if (localStorage.getItem("score") == '0'){
+            document.querySelector(".score").textContent = "0/5";
+            localStorage.setItem("score", "0");
+            localStorage.setItem("status", 'incorrect');
+            localStorage.setItem("q1", 'unanswered');
+        } else {
+            let score = parseInt(localStorage.getItem("score"));
+            localStorage.setItem("score", score.toString());
+            document.querySelector(".score").textContent = localStorage.getItem("score") + "/5";
+        }
     } else {
         let score = parseInt(localStorage.getItem("score"));
         localStorage.setItem("score", score.toString());
@@ -59,4 +66,5 @@ reset.addEventListener("click", function() {
     localStorage.setItem("status2", 'incorrect');
     localStorage.setItem("status3", 'incorrect');
     localStorage.setItem("status4", 'incorrect');
+    localStorage.setItem("score", "0");
 });

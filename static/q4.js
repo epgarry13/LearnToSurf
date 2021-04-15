@@ -14,6 +14,7 @@ reset.addEventListener("click", function() {
     localStorage.setItem("status2", 'incorrect');
     localStorage.setItem("status3", 'incorrect');
     localStorage.setItem("status4", 'incorrect');
+    localStorage.setItem("score", "0");
 });
 
 rightAnswer.addEventListener("click", function() {
